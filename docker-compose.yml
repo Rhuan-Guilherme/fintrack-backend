@@ -1,0 +1,11 @@
+version: '3'
+
+services:
+  fin-track-app:
+    image: bitnami/postgresql
+    environment:
+      - POSTGRESQL_PASSWORD=docker
+      - POSTGRESQL_USERNAME=docker
+      - POSTGRESQL_DATABASE=fintrack
+    ports:
+      - 5432:5432
